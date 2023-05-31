@@ -1,0 +1,103 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Text Analyzer-Best Text Analyzer</title>        
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://kit.fontawesome.com/dfafef7c19.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <nav class="navbar navbar-expand-md navbar-light bg-light my-2">
+        <div class="container">
+          <a class="navbar-brand fs-3 fw-semibold" href="#">Text Analyzer</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ms-auto fw-medium">
+              <li class="nav-item mx-3">
+                <a class="nav-link" href="#">Home</a>
+              </li>
+              <li class="nav-item mx-3">
+                <a class="nav-link" href="#">About</a>
+              </li>
+              <li class="nav-item mx-3">
+                <a class="nav-link" href="#">Contact</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+      <div class="container my-4 p-4 box">
+    <h1 class="fs-sm-6 fs-md-5 fs-lg-2">Welcome to Text Analyzer-Enter your text here.</h1>
+    <div class="form-floating">
+        <textarea class="form-control" placeholder="Enter your text" id="inputText"></textarea>
+        <label for="inputText">Input Text</label>
+      </div>
+      
+      <div class="d-flex justify-content-between">
+      <div class="dropdown">
+        <button class="btn dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+          <span class="fs-5">Aa</span>
+        </button>
+        <ul class="dropdown-menu">
+          <li><button type="button" class="btn dropdown-item" id="uppercase"><span class="initial-letter">U</span>PPERCASE</button></li>
+          <li><button type="button" class="btn dropdown-item" id="lowercase"><span class="initial-letter">l</span>owercase</button></li>
+          <li><button type="button" class="btn dropdown-item" id="capitalizedEachWord"><span class="initial-letter">C</span>apitalized Each Word</button></li>
+          <li><button type="button" class="btn dropdown-item" id="sentencecase"><span class="initial-letter">S</span>entence Case</button></li>
+          <li><button type="button" class="btn dropdown-item" id="tooglecase"><span class="initial-letter">t</span>OOGLECASE</button></li>
+        </ul>
+      </div>
+      <div class="Un-Re">
+        <button type="button" class="btn" id="undo"><i class="fa-solid fa-arrow-rotate-left"></i></button>
+        <div class="txt">Undo</div>
+          <button type="button" class="btn" id="redo"><i class="fa-solid fa-arrow-rotate-right"></i></button>
+          <div class="txt">Redo</div>
+        </div>
+      </div>
+      
+      
+      
+      <button type="button" class="btn" id="left"><i class="fa-solid fa-align-left"></i></button>
+      <div class="txt">Left</div>
+      <button type="button" class="btn" id="center"><i class="fa-solid fa-align-center"></i></button>
+      <div class="txt">Center</div>
+      <button type="button" class="btn" id="right"><i class="fa-solid fa-align-right"></i></button>
+      <div class="txt">Right</div>
+      <button type="button" class="btn" id="justify"><i class="fa-solid fa-align-justify"></i></button>
+      <div class="txt">Justify</div>
+      <div class="dropdown">
+        <button class="btn dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+          <span class="fs-5">Remove</span>
+        </button>
+        <div class="d-flex justify-content-between">
+          <div class="">
+
+            <ul class="dropdown-menu">
+              <li><button type="button" class="btn" id="rmExSpaces">Remove Extra Spaces</button></li>
+              <li><button type="button" class="btn" id="rmExLines">Remove Extra Lines</button></li>
+            </ul>
+          </div>
+          <div class="form-group d-flex flex-column justify-content-center align-items-center gap-2">
+            <label for="color" class="fs-5">Choose Background Colour</label>
+            <input class="form-control" type="color" id="color" value="#8c1f89">
+            <button type="button" class="btn btn-outline-secondary" id="colorChange">Change</button>
+          </div>
+        </div>
+      </div>
+      
+  
+  
+<div class="my-2 mx-1 fs-5 fw-semibold">
+  <span id="wordCount">0</span> Words and <span id="characterCount">0</span> Characters
+</div>
+</div>
+<script src="https://code.jquery.com/jquery-3.6.4.js" integrity="sha256-a9jBBRygX1Bh5lt8GZjXDzyOB+bWve9EiO7tROUtj/E=" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe" crossorigin="anonymous"></script>
+    <script src="index.js"></script>
+</body>
+</html>
